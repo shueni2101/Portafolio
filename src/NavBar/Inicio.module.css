@@ -1,0 +1,526 @@
+@import url('https://fonts.googleapis.com/css?family=Pirata+One|Rubik:900');
+.container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 9vh;
+}
+.containerSon{
+  display:flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #141E30;
+  background: linear-gradient(to right, #24243e, #141E30, #0f0c29);
+  border-bottom: 1px solid   rgb(108, 83, 83); 
+  height: 100%;
+}
+.header{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 10%;
+  height: 100%;
+  margin: 0px;
+}
+.motion{
+width: 100%;
+height: 100%;
+display: inline-flex;
+justify-content: center;
+align-items: center;
+align-self: center;
+}
+.motionTitle{
+  width: 40%;
+  margin: 0px;
+  border-radius: 80%;
+  background-color: rgb(13, 13, 124);
+  border: 10px solid transparent;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  font-size: 150%;
+  flex-direction: row;
+  color: grey;
+  font-weight: bold;
+  font-family:cursive;
+transition: 1s;
+}
+h5:hover{
+  color: white;
+  cursor: pointer;
+  transform: rotate(360deg);
+  }
+  .TitleResponsive{
+    display: none;
+  }
+.main{
+  display: inline-block;
+  height: 100%;
+  width: 88%;
+box-sizing: border-box;
+}
+.nav{
+  height: 100%;
+  width: 100%;
+}
+.nav ul {
+  align-items: center;
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-end;
+  font-family: 'Titillium Web';
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+.nav ul * {
+  display: inline-flex;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  transition: all .35s ease;
+}
+.nav ul> li {
+  display: inline-flex;
+  list-style: outside none none;
+  margin: .0em 0em;
+  padding: 0;
+}
+.navLink{
+  padding: .5em .8em;
+  width: 100%;
+  height: 100%;
+  color: rgba(255,255,255,.5);
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+}
+.navLink::before,.navLink::after{
+  content: '';
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  transition: all .35s ease;
+  opacity: 0;
+}
+.navLink::before {
+  content: '';
+  right: 0;
+  top: 0;
+  border-top: 3px solid deepskyblue;
+  border-right: 3px solid deepskyblue;
+  transform: translate(-100%, 50%);
+}.navLink:after {
+  content: '';
+  left: 0;
+  bottom: 0;
+  border-bottom: 3px solid deepskyblue;
+  border-left: 3px solid deepskyblue;
+  transform: translate(100%, -50%)
+}
+
+.navLink:hover:before,
+.navLink:hover:after{
+  transform: translate(0,0);
+  opacity: 1;
+}
+
+.navLink:hover {
+  color: deepskyblue;
+}
+.icon{
+  font-size: 2vh;
+  display: flex;
+  color: white;
+  margin-left: 2px;
+  margin-top: 3px;
+  transition: 0.4s;
+}
+.ocultar{
+ visibility: hidden;
+}
+
+@media  (min-width:801px) and (max-width:1400px){
+  .container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 9vh;
+  }
+  .containerSon{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #141E30;
+    background: linear-gradient(to right, #24243e, #141E30, #0f0c29);
+    border-bottom: 1px solid   rgb(108, 83, 83); 
+    height: 100%;
+  }
+  .header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 10%;
+    height: 100%;
+    margin: 0px;
+  }
+  .motion{
+  width: 100%;
+  height: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  }
+  .motionTitle{
+    width: 70%;
+    margin: 0px;
+    border-radius: 80%;
+    background-color: rgb(13, 13, 124);
+    border: 10px solid transparent;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    font-size:150%;
+    flex-direction: row;
+    color: grey;
+    font-weight: bold;
+    font-family:cursive;
+  transition: 1s;
+  }
+  h5:hover{
+    color: white;
+    cursor: pointer;
+    transform: rotate(360deg);
+    }
+    .TitleResponsive{
+      display: none;
+    }
+  .main{
+    display: inline-block;
+    height: 100%;
+    width: 88%;
+  box-sizing: border-box;
+  }
+
+  .nav{
+    height: 100%;
+    width: 100%;
+  }
+  .nav ul {
+    align-items: center;
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
+    font-family: 'Titillium Web';
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    box-sizing: border-box;
+  }
+  .nav ul * {
+    display: inline-flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    transition: all .35s ease;
+  }
+  .nav ul> li {
+    display: inline-flex;
+    list-style: outside none none;
+    margin: .0em 0em;
+    padding: 0;
+  }
+  .navLink{
+    padding: .5em .8em;
+    width: 100%;
+    height: 100%;
+    color: rgba(255,255,255,.5);
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .navLink::before,.navLink::after{
+    content: '';
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    transition: all .35s ease;
+    opacity: 0;
+  }
+  .navLink::before {
+    content: '';
+    right: 0;
+    top: 0;
+    border-top: 3px solid deepskyblue;
+    border-right: 3px solid deepskyblue;
+    transform: translate(-100%, 50%);
+  }.navLink:after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid deepskyblue;
+    border-left: 3px solid deepskyblue;
+    transform: translate(100%, -50%)
+  }
+  
+  .navLink:hover:before,
+  .navLink:hover:after{
+    transform: translate(0,0);
+    opacity: 1;
+  }
+  
+  .navLink:hover {
+    color: deepskyblue;
+  }
+  .icon{
+    display: flex;
+    color: white;
+    margin-top: 1%;
+    font-size: 15px;
+  }
+}
+@media  (min-width:551px) and (max-width:800px)
+{
+  .container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 9vh;
+  }
+  .containerSon{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #141E30;
+    background: linear-gradient(to right, #24243e, #141E30, #0f0c29);
+    border-bottom: 1px solid   rgb(108, 83, 83); 
+    height: 100%;
+  }
+  .header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 10%;
+    height: 100%;
+    margin: 0px;
+  }
+  .motion{
+  width: 100%;
+  height: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  }
+  .motionTitle{
+    width: 90%;
+    margin: 0px;
+    border-radius: 80%;
+    background-color: rgb(13, 13, 124);
+    border: 10px solid transparent;
+    align-items: center;
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    font-size:120%;
+    flex-direction: row;
+    color: grey;
+    font-weight: bold;
+    font-family:cursive;
+    transition: 1s;
+  }
+  h5:hover{
+    color: white;
+    cursor: pointer;
+    transform: rotate(360deg);
+    }
+    .TitleResponsive{
+      display: none;
+    }
+  .main{
+    display: inline-block;
+    height: 100%;
+    width: 88%;
+    box-sizing: border-box;
+    margin: 0px;
+  }
+  .nav{
+  box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+
+  }
+  .nav ul {
+    align-items: center;
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
+    font-family: 'Titillium Web';
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    box-sizing: border-box;
+    margin: 0px;
+
+  }
+  .nav ul * {
+    display: inline-flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    transition: all .35s ease;
+  }
+  .nav ul> li {
+    display: inline-flex;
+    list-style: outside none none;
+    margin: .0em 0em;
+    padding: 0;
+  }
+  .navLink{
+    padding: .4em .4em;
+    width: 100%;
+    height: 100%;
+    color: rgba(255,255,255,.5);
+    position: relative;
+    text-decoration: none;
+    font-size: 1.2vh;
+  }
+  .navLink::before,.navLink::after{
+    content: '';
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    transition: all .35s ease;
+    opacity: 0;
+  }
+  .navLink::before {
+    content: '';
+    right: 0;
+    top: 0;
+    border-top: 3px solid deepskyblue;
+    border-right: 3px solid deepskyblue;
+    transform: translate(-100%, 50%);
+  }.navLink:after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid deepskyblue;
+    border-left: 3px solid deepskyblue;
+    transform: translate(100%, -50%)
+  }
+  
+  .navLink:hover:before,
+  .navLink:hover:after{
+    transform: translate(0,0);
+    opacity: 1;
+  }
+  
+  .navLink:hover {
+    color: deepskyblue;
+  }
+  .icon{
+    display: flex;
+    color: white;
+    margin-top: 1%;
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width:300px) and (max-width:550px)
+{
+  .container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 10vh;
+  }
+  .containerSon{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #141E30;
+    background: linear-gradient(to right, #24243e, #141E30, #0f0c29);
+    border-bottom: 1px solid   rgb(108, 83, 83); 
+    height: 100%;
+  }
+  .header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+  }
+  .TitleResponsive{
+    background-color: transparent;
+    font-size: 100%;
+    visibility: visible;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    color: grey;
+    font-size: 3.5vh;
+  }
+  .motion{
+    display: none;
+  }
+  .nav ul {
+    display: none;
+  }
+  .icon{
+    display: none;
+  }
+  
+}
+@media only screen and (min-width:150px) and (max-width:299px)
+{
+  .container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 10vh;
+  }
+  .containerSon{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #141E30;
+    background: linear-gradient(to right, #24243e, #141E30, #0f0c29);
+    border-bottom: 1px solid   rgb(108, 83, 83); 
+    height: 100%;
+  }
+.header{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+.motion{
+  display: none;
+}
+.motionTitle{
+  display: none;
+}
+
+.TitleResponsive{
+  background-color: transparent;
+  font-size: 100%;
+  visibility: visible;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  color: grey;
+  font-size: 3vh;
+}
+ 
+  .nav ul {
+    display: none;
+  }
+  .icon{
+    display: none;
+  }
+  
+}
